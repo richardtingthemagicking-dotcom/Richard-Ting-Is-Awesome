@@ -5,13 +5,184 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Richard Ting's Awesome Portfolio!</title>
     <link rel="stylesheet" href="style.css">
+
+
+
 </head>
 <body>
-    <h2>Welcome to my Portfolio!</h2>
-    <p>Hello, I'm Richard Ting and I'm a web developer.</p>
-    <p>Feel free to explore my projects and get in touch! </p>
-    <p>You'll see that I have a passion for creating beautiful and functional websites.</p>
+    <script src="script.js"></script>
+    <header>
+        <h1>The Man, The Myth, And The Legend</h1>
+        <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+          <li><a href="#socialMedia">Social Media</a></li>
+          <li><a href="#education">Education</a></li>
+            <li><a href="#travel">Travel</a></li>
+            <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="about">
+        <h2>Who Is This Guy?</h2>
+        <p>Obviously, I'm Richard Ting! I come from a magical land where the sun always shines and the rainbows are real! Where a 
+            <a href="https://www.disneyworld.com" target="_blank">mouse</a> reigns supreme and the rides are <a href="https://www.universalorlando.com" target="_blank">universal</a>. I'm from Orlando, Florida!</p>
+            <p>Now you might think that I'm just another web developer, but I'm actually a wizard with a passion for creating amazing digital experiences! Some people might try to say I'm a rookie, but I can tell your fortune like a cookie!</p>
+            <button onclick="tellFortune()">Tell My Fortune!</button>
+            <p id="fortune"></p>
 
+    </section>
+    <section id="socialMedia">
+        <h2>Social Media</h2>
+        <p>Follow me on social media to stay updated with my latest projects and thoughts!</p>
+        <p><a href="https://twitter.com" target="_blank">Twitter</a> | <a href="https://www.linkedin.com/in/richard-ting-a21513293" target="_blank">LinkedIn</a> | <a href="https://github.com/richardtingthemagicking-dotcom/Richard-Ting-Is-Awesome.git" target="_blank">GitHub</a></p>
+    </section>
+    <section id="education">
+        <h2>Education</h2>
+        <p>I have a degree in Recreation and Leisure Services. I have completed the mini courses for <a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a>. I always wondered if it was a typing error but now I know it was meant that way for their name. Never thought it would be something as quirky as camelCase!</p>
+        <hr>
+        <p>Here are some pictures of the courses I have completed:</p>
+        <h3>Basic HTML</h3>
+        <img src="basic-html.jpg" alt="Basic HTML Course Completion Certificate">
+        <h3>Basic CSS</h3>
+        <img src="css.jpg" alt="Basic CSS Course Completion Certificate">
+        <h3>JavaScript</h3>
+        <img src="javascript.jpg" alt="JavaScript Course Completion Certificate">
+    </section>
+    <section id="travel">
+        <h2>Travel</h2>
+        <p>I love exploring new places and cultures. Here is a picture of me at the beach from one of the cruises I've taken!</p>
+        <img src="richard-ting-beach.jpg" alt="Me at the beach on a cruise">
+        <p> One day, I would like to visit the beaches of Vietnam!</p>
+        <img src="vietnam-beach.jpg" alt="Beautiful beach in Vietnam">
+    </section>
+    <section id="work">
+        <h2>Work</h2>
+        <p>There are many paths that I can take after completing the boot camp.</p>
+       <p> Here are some possibilities: <ul>
+            <li>Web Developer</li>
+            <li>Software Engineer</li>
+            <li>UI/UX Designer</li>
+        </ul>
+        </p>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>Feel free to reach out if you'd like to collaborate or just say hello!</p>
+    </section>
+    <section>
+
+        <p>
+        Thank you for visiting my website. Please provide feedback about your experience.
+      </p>
+    </header>
+    <main>
+      <form method="POST" action="https://website-feedback.freecodecamp.org">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="full-name">Name (required):</label>
+          <input type="text" id="full-name" name="name" placeholder="e.g., John Doe" required size="20">
+
+
+          <label for="email">Email address (required):</label>
+          <input
+            placeholder="example@email.com"
+            required
+            id="email"
+            type="email"
+            name="email"
+            size="20"
+          />
+          <label for="age">Age (optional):</label>
+          <input type="number" name="age" id="age" min="3" max="100" />
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Was this your first time at my website?</legend>
+          <input id="yes-option" type="radio" name="website-visit" value="yes" />
+          <label for="yes-option">Yes</label>
+          <input id="no-option" type="radio" name="website-visit" value="no" />
+          <label for="no-option">No</label>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>
+            Why did you choose to visit my website? (Check all that apply)
+          </legend>
+
+
+          <input type="checkbox" id="ads" name="choice" value="ads" />
+          <label for="ads">Social Media Ads</label>
+
+
+          <input
+            type="checkbox"
+            id="recommendation"
+            name="choice"
+            value="recommendation"
+          />
+          <label for="recommendation">Personal Recommendation</label>
+         
+          <input type="checkbox" id="google" name="choice" value="google" />
+          <label for="google">Google Search</label>
+
+
+          <input
+            checked
+            type="checkbox"
+            id="reputation"
+            name="choice"
+            value="reputation"
+          />
+          <label for="reputation">Reputation</label>
+         
+          <input type="checkbox" id="linkedin" name="choice" value="linkedin" />
+          <label for="linkedin">LinkedIn</label>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Ratings</legend>
+
+
+          <label for="service">How was the media?</label>
+
+
+          <select name="service" id="service">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+
+
+          <label for="food">How was the text content?</label>
+
+
+          <select name="food" id="food">
+            <option value="poor">Poor</option>
+            <option value="satisfactory">Satisfactory</option>
+            <option value="good">Good</option>
+            <option value="very-good">Very Good</option>
+            <option selected value="excellent">Excellent</option>
+          </select>
+        </fieldset>
+
+
+        <label for="comments">Other Comments?</label>
+        <textarea cols="30" rows="10" name="comments" id="comments"></textarea>
+
+
+        <button type="submit">Submit</button>
+      </form>
+    </section>
 
 </body>
+<footer>
+    <p>&copy; 1986 Richard Ting. All rights reserved.</p>
+</footer>
 </html>
