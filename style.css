@@ -34,7 +34,7 @@ img {
     height: auto;
     margin-top: 10px;
     border-radius: 8px;
-    border: 3px dashed purple;
+    border: 3px solid black;
 }
 
 ul, li{
