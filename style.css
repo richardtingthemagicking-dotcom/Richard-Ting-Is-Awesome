@@ -40,7 +40,7 @@ img {
 ul, li{
     font-size: 1.2em;
     line-height: 1.6;
-    color: pink;
+    color: red;
 }
 a:hover{
     color: darkred;
