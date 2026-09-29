@@ -40,3 +40,15 @@ ul, li{
     line-height: 1.6;
     color: darkblue;
 }
+a:hover{
+    color: darkred;
+}
+a:active{
+    color: darkgreen;
+}
+a:visited{
+    color: darkorange;
+}
+a:link{
+    color: darkblue;
+}
