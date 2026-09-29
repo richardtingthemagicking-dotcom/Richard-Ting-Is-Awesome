@@ -6,6 +6,6 @@ function tellFortune() {
         "Your kindness will return to you.",
         "You are so happy you came to this website!"
     ];
-    const randomFortune = [Math.floor(Math.random() * fortunes.length)];
-    document.getElementById("fortune").textContent = fortunes[randomFortune];
+    const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
+    document.getElementById("fortune").textContent = randomFortune;
 }
